@@ -141,7 +141,7 @@ export default function NewAdPage() {
       title,
       slug,
       description,
-      images: images.length > 0 ? images : ["/placeholder.svg?height=720&width=960"],
+      images: images.length > 0 ? images : ["https://img.freepik.com/free-photo/young-business-people-meeting-office_1303-13701.jpg"],
       category,
       price: computedPrice,
       currency: "USD",

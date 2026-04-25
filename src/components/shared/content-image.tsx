@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type CSSProperties, type ImgHTMLAttributes } from "react";
 
-const PLACEHOLDER = "/placeholder.svg?height=900&width=1400";
+const PLACEHOLDER = "https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15773.jpg";
 
 type ContentImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src" | "alt"> & {
   src?: string;

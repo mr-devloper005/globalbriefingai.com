@@ -74,7 +74,7 @@ const getImageUrls = (post: SitePost, content: PostContent) => {
   const merged = [...mediaImages, ...contentImages];
   if (merged.length) return merged;
   if (isValidImageUrl(content.logo)) return [content.logo as string];
-  return ["/placeholder.svg?height=900&width=1400"];
+  return ["https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15773.jpg"];
 };
 
 const toNumber = (value?: number | string) => {

@@ -349,7 +349,7 @@ export default function SettingsPage() {
                       <div
                         className="h-32 w-full bg-cover bg-center"
                         style={{
-                          backgroundImage: `url(${user?.coverImage || "/placeholder.svg?height=320&width=1280"})`,
+                          backgroundImage: `url(${user?.coverImage || "https://img.freepik.com/free-photo/business-people-meeting_53876-15186.jpg"})`,
                         }}
                       />
                     </div>

@@ -69,7 +69,7 @@ export default function NewCollectionPage() {
                 updatedAt: new Date().toISOString(),
                 isPrivate,
                 bookmarks: [],
-                coverImages: ['/placeholder.svg?height=240&width=240'],
+                coverImages: ['https://img.freepik.com/free-photo/close-up-businesswoman-working-laptop-office_1098-18710.jpg'],
               }
               const stored = loadFromStorage<BookmarkCollection[]>(storageKeys.bookmarkCollections, [])
               saveToStorage(storageKeys.bookmarkCollections, [newCollection, ...stored])
