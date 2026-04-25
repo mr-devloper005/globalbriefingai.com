@@ -59,7 +59,7 @@ const recentActivity = [
     action: "commented on your article",
     target: "Building Modern Web Apps",
     time: "5 min ago",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "https://img.freepik.com/free-photo/portrait-businesswoman-working-laptop_23-2148767031.jpg",
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ const recentActivity = [
     action: "liked your listing",
     target: "Tech Solutions Inc.",
     time: "15 min ago",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "https://img.freepik.com/free-photo/woman-working-call-center_23-2149288197.jpg",
   },
   {
     id: 3,
@@ -77,7 +77,7 @@ const recentActivity = [
     action: "started following you",
     target: "",
     time: "1 hour ago",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "https://img.freepik.com/free-photo/confident-business-team-with-leader_1098-3228.jpg",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ const recentActivity = [
     action: "sent you a message about",
     target: "2019 Honda Civic",
     time: "2 hours ago",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15773.jpg",
   },
 ]
 

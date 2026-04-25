@@ -49,7 +49,7 @@ const getImageUrls = (post: any, content: PostContent) => {
   const merged = [...mediaImages, ...contentImages];
   if (merged.length) return merged;
   if (isValidImageUrl(content.logo)) return [content.logo as string];
-  return ["/placeholder.svg?height=900&width=1400"];
+  return ["https://img.freepik.com/free-photo/business-people-meeting_53876-15186.jpg"];
 };
 
 const toNumber = (value?: number | string) => {

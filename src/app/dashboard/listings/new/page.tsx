@@ -147,7 +147,7 @@ export default function NewListingPage() {
       title: name,
       slug,
       description,
-      images: images.length > 0 ? images : ["/placeholder.svg?height=720&width=960"],
+      images: images.length > 0 ? images : ["https://img.freepik.com/free-photo/business-team-analyzing-data_23-2148826808.jpg"],
       category: category || "General",
       location: `${city}`,
       address,

@@ -124,7 +124,7 @@ export default function NewArticlePage() {
       slug,
       excerpt,
       content,
-      coverImage: coverImage || "/placeholder.svg?height=720&width=1280",
+      coverImage: coverImage || "https://img.freepik.com/free-photo/business-people-meeting_53876-15186.jpg",
       author: user,
       category: category || "General",
       tags: tags.length > 0 ? tags : ["New"],
