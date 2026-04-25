@@ -1,93 +1,65 @@
-import Link from "next/link";
-import { PageShell } from "@/components/shared/page-shell";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { mockTeamMembers } from "@/data/mock-data";
-import { SITE_CONFIG } from "@/lib/site-config";
-
-const highlights = [
-  { label: "Creators onboarded", value: "12k+" },
-  { label: "Bookmarks shared", value: "180k" },
-  { label: "Listings published", value: "8.6k" },
-];
+import Image from 'next/image'
+import Link from 'next/link'
+import { NavbarShell } from '@/components/shared/navbar-shell'
+import { Footer } from '@/components/shared/footer'
+import { SITE_CONFIG } from '@/lib/site-config'
 
 const values = [
-  { title: "Curated by people", description: "We believe trusted recommendations beat endless feeds." },
-  { title: "Designed for focus", description: "Clear, calm UI helps you find the next best resource fast." },
-  { title: "Built to share", description: "Collections make collaboration and knowledge flow effortless." },
-];
+  {
+    title: 'Editorial quality first',
+    body: 'We prioritize clarity, structure, and relevance so each release reads like a trustworthy media story.',
+  },
+  {
+    title: 'Distribution with intent',
+    body: 'Every release is prepared for visibility and discoverability, not just publication.',
+  },
+  {
+    title: 'Long-term newsroom value',
+    body: 'We help teams build an ongoing press narrative instead of one-off announcements.',
+  },
+]
+
+const ABOUT_IMAGE = 'https://img.freepik.com/free-photo/young-business-people-meeting-office_1303-13701.jpg'
 
 export default function AboutPage() {
   return (
-    <PageShell
-      title={`About ${SITE_CONFIG.name}`}
-      description={`${SITE_CONFIG.name} is a modern platform for creators, communities, and curated business discovery.`}
-      actions={
-        <>
-          <Button variant="outline" asChild>
-            <Link href="/team">Meet the Team</Link>
-          </Button>
-          <Button asChild>
-            <Link href="/contact">Contact Us</Link>
-          </Button>
-        </>
-      }
-    >
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card className="border-border bg-card">
-          <CardContent className="space-y-4 p-6">
-            <Badge variant="secondary">Our Story</Badge>
-            <h2 className="text-2xl font-semibold text-foreground">
-              A single home for knowledge, discovery, and community.
-            </h2>
-            <p className="text-sm text-muted-foreground">
-              {SITE_CONFIG.name} brings together publishing, listings, and social bookmarking so teams can move faster
-              and keep their best resources close.
-            </p>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {highlights.map((item) => (
-                <div key={item.label} className="rounded-lg border border-border bg-secondary/40 p-4">
-                  <div className="text-2xl font-semibold text-foreground">{item.value}</div>
-                  <div className="text-xs text-muted-foreground">{item.label}</div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-        <div className="space-y-4">
-          {values.map((value) => (
-            <Card key={value.title} className="border-border bg-card">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-foreground">{value.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {mockTeamMembers.map((member) => (
-          <Card key={member.id} className="border-border bg-card transition-transform hover:-translate-y-1">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-3">
-                <Avatar className="h-12 w-12">
-                  <AvatarImage src={member.avatar} alt={member.name} />
-                  <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">{member.name}</p>
-                  <p className="text-xs text-muted-foreground">{member.role}</p>
-                </div>
+    <div className="min-h-screen bg-[#f8fbff] text-slate-900">
+      <NavbarShell />
+      <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <section className="rounded-3xl border border-[#d4e6ff] bg-white p-6 shadow-[0_22px_55px_rgba(40,72,139,0.12)] sm:p-8">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#536ba3]">About Us</p>
+              <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[#0f1c3d]">A media-first platform for brands that need consistent press visibility.</h1>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">{SITE_CONFIG.name} supports startups, agencies, and PR teams with release writing, publication, and newsroom growth workflows.</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link href="/updates" className="rounded-xl bg-[#685AFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#5849f1]">
+                  Explore Newsroom
+                </Link>
+                <Link href="/contact" className="rounded-xl border border-[#d4e6ff] bg-white px-5 py-3 text-sm font-semibold text-[#1f2f59] transition hover:border-[#9CCFFF]">
+                  Contact Team
+                </Link>
               </div>
-              <p className="mt-3 text-sm text-muted-foreground">{member.bio}</p>
-              <p className="mt-3 text-xs text-muted-foreground">{member.location}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-    </PageShell>
-  );
+            </div>
+            <Image src={ABOUT_IMAGE} alt="About page visual" width={1200} height={900} className="h-auto w-full rounded-2xl border border-[#dbe9ff] object-cover" />
+          </div>
+        </section>
+
+        <section className="mt-10 grid gap-6 md:grid-cols-3">
+          {values.map((item) => (
+            <article key={item.title} className="rounded-3xl border border-[#d6e8ff] bg-white p-6 shadow-[0_16px_45px_rgba(34,66,134,0.1)]">
+              <h2 className="text-xl font-semibold text-[#112249]">{item.title}</h2>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{item.body}</p>
+            </article>
+          ))}
+        </section>
+
+        <section className="mt-10 rounded-3xl border border-[#d6e8ff] bg-white p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-[#112249]">Our Mission</h2>
+          <p className="mt-4 max-w-4xl text-sm leading-8 text-slate-600">We want every company update to be publication-ready, strategically positioned, and easy to discover. The platform combines strong writing structure with practical distribution flow so press releases become a durable growth channel.</p>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
 }

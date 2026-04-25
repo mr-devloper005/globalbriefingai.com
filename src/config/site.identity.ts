@@ -1,10 +1,10 @@
 export const siteIdentity = {
   code: process.env.NEXT_PUBLIC_SITE_CODE || 'p9r0vd3fr3',
-  name: process.env.NEXT_PUBLIC_SITE_NAME || 'Globalbriefingai',
-  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Independent media updates',
+  name: process.env.NEXT_PUBLIC_SITE_NAME || 'GlobalBriefingAI',
+  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Media press release platform',
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-    'A simple newsroom-style publication for announcements, coverage, and media updates on Globalbriefingai.',
+    'GlobalBriefingAI helps businesses publish, distribute, and scale media press releases with a modern newsroom experience.',
   domain: process.env.NEXT_PUBLIC_SITE_DOMAIN || 'globalbriefingai.com',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://globalbriefingai.com',
   ogImage: process.env.NEXT_PUBLIC_SITE_OG_IMAGE || '/og-default.png',
@@ -13,5 +13,5 @@ export const siteIdentity = {
 
 export const defaultAuthorProfile = {
   name: siteIdentity.name,
-  avatar: '/placeholder.svg?height=80&width=80',
+  avatar: 'https://img.freepik.com/free-photo/portrait-businesswoman-working-laptop_23-2148767031.jpg',
 } as const

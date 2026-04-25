@@ -2,10 +2,10 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Independent news desk',
+    tagline: 'Media press release platform',
   },
   footer: {
-    tagline: 'Simple publishing for press-style updates',
+    tagline: 'Distribution-ready press newsroom',
   },
   hero: {
     badge: 'Latest updates',
@@ -29,13 +29,13 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Latest updates and newsroom posts',
+      title: 'Press release distribution and newsroom updates',
       description:
-        'Read the latest updates, announcements, and stories through a simple archive-first publishing experience.',
-      openGraphTitle: 'Latest updates and newsroom posts',
+        'Publish and explore media press releases, newsroom coverage, and business announcements with GlobalBriefingAI.',
+      openGraphTitle: 'Press release distribution and newsroom updates',
       openGraphDescription:
-        'A simple publishing template for updates, announcements, and readable article pages.',
-      keywords: ['newsroom posts', 'latest updates', 'announcements', 'press articles'],
+        'A modern press release platform for media visibility, distribution, and growth.',
+      keywords: ['press release', 'media distribution', 'newsroom', 'business announcements'],
     },
     introBadge: 'About',
     introTitle: 'A quiet publishing template made for regular updates.',
@@ -108,8 +108,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest updates',
-    description: 'Read the latest published updates and announcements.',
+    title: 'Press Releases',
+    description: 'Read the latest published press releases and media announcements.',
   },
 }
 
@@ -128,10 +128,10 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Latest updates',
+    title: 'Press Releases',
     paragraphs: [
-      'This archive is designed for straightforward publishing: regular updates, announcements, and media-style posts presented in a clean reading format.',
-      'The layout stays simple so visitors can scan headlines quickly, open stories easily, and move through the archive without distraction.',
+      'This newsroom archive is designed for press release discovery with category-led scanning and clear publication metadata.',
+      'Browse the latest announcements, open full release details, and move through related media coverage from one place.',
     ],
     links: [
       { label: 'Home', href: '/' },
