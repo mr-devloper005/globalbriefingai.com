@@ -2,7 +2,7 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Media press release platform',
+    tagline: 'Media press media platform',
   },
   footer: {
     tagline: 'Distribution-ready press newsroom',
@@ -29,13 +29,13 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Press release distribution and newsroom updates',
+      title: 'Press media distribution and newsroom updates',
       description:
-        'Publish and explore media press releases, newsroom coverage, and business announcements with GlobalBriefingAI.',
-      openGraphTitle: 'Press release distribution and newsroom updates',
+        'Publish and explore media press media, newsroom coverage, and business announcements with GlobalBriefingAI.',
+      openGraphTitle: 'Press media distribution and newsroom updates',
       openGraphDescription:
-        'A modern press release platform for media visibility, distribution, and growth.',
-      keywords: ['press release', 'media distribution', 'newsroom', 'business announcements'],
+        'A modern press media platform for media visibility, distribution, and growth.',
+      keywords: ['press media', 'media distribution', 'newsroom', 'business announcements'],
     },
     introBadge: 'About',
     introTitle: 'A quiet publishing template made for regular updates.',
@@ -108,8 +108,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Press Releases',
-    description: 'Read the latest published press releases and media announcements.',
+    title: 'Press Media',
+    description: 'Read the latest published press media and media announcements.',
   },
 }
 
@@ -128,10 +128,10 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Press Releases',
+    title: 'Press Media',
     paragraphs: [
-      'This newsroom archive is designed for press release discovery with category-led scanning and clear publication metadata.',
-      'Browse the latest announcements, open full release details, and move through related media coverage from one place.',
+      'This newsroom archive is designed for press media discovery with category-led scanning and clear publication metadata.',
+      'Browse the latest announcements, open full media details, and move through related media coverage from one place.',
     ],
     links: [
       { label: 'Home', href: '/' },

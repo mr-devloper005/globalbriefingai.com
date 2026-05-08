@@ -21,7 +21,7 @@ const FREEPIK = {
 
 const faqItems = [
   {
-    question: 'How fast can my press release go live?',
+    question: 'How fast can my press media go live?',
     answer:
       'Most releases are reviewed and published quickly with distribution-ready formatting, metadata checks, and newsroom placement.',
   },
@@ -74,10 +74,10 @@ export async function HomePageOverride() {
           <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:px-8 lg:py-20">
             <div>
               <p className="inline-flex items-center rounded-full border border-[#cfe1ff] bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#4034b2]">
-                Media Press Release Platform
+                Media Press Media Platform
               </p>
               <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-[-0.03em] text-[#101935] sm:text-5xl lg:text-6xl">
-                Press releases built for credibility, reach, and search impact.
+                Press media built for credibility, reach, and search impact.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600">
                 {SITE_CONFIG.name} helps teams publish, distribute, and amplify announcements with a modern newsroom workflow.
@@ -93,18 +93,15 @@ export async function HomePageOverride() {
                 <Link href="/updates" className="inline-flex items-center justify-center rounded-xl bg-[#685AFF] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#5748f0]">
                   Explore Releases
                 </Link>
-                <Link href="/pricing" className="inline-flex items-center justify-center rounded-xl border border-[#c8ddff] bg-white px-6 py-3 text-sm font-semibold text-[#1d2b4f] transition hover:-translate-y-0.5 hover:border-[#9CCFFF]">
-                  View Pricing
-                </Link>
               </div>
             </div>
             <div className="rounded-3xl border border-[#d5e7ff] bg-white p-5 shadow-[0_30px_70px_rgba(56,93,171,0.16)] transition hover:-translate-y-1">
               <div className="overflow-hidden rounded-2xl">
-                <Image src={FREEPIK.hero} alt="Press release writing preview" width={1200} height={760} className="h-auto w-full object-cover" />
+                <Image src={FREEPIK.hero} alt="Press media writing preview" width={1200} height={760} className="h-auto w-full object-cover" />
               </div>
               <div className="mt-4 rounded-2xl border border-[#e2ecff] bg-[#f6f9ff] p-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#5b6da3]">Service Focus</p>
-                <h2 className="mt-2 text-xl font-semibold text-[#16244b]">Press Release Writing</h2>
+                <h2 className="mt-2 text-xl font-semibold text-[#16244b]">Press Media Writing</h2>
                 <p className="mt-2 text-sm leading-7 text-slate-600">Human-first narrative structure with SEO-friendly formatting and distribution-ready messaging.</p>
               </div>
             </div>
@@ -114,7 +111,7 @@ export async function HomePageOverride() {
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#526ca6]">Team Extension</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#0f1b3d]">Extend your in-house team with specialized press release support.</h2>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#0f1b3d]">Extend your in-house team with specialized press media support.</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">Whether you need occasional writing support or full-cycle release operations, we integrate into your workflow.</p>
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -299,7 +296,7 @@ export async function HomePageOverride() {
             <div className="mt-10 rounded-3xl border border-[#c9ddff] bg-[linear-gradient(90deg,#685AFF_0%,#7f72ff_100%)] px-6 py-5 text-white">
               <p className="text-sm uppercase tracking-[0.16em] text-white/80">Latest Release</p>
               <p className="mt-2 text-2xl font-semibold">{featured.title}</p>
-              <Link href={`/updates/${featured.slug}`} className="mt-4 inline-flex rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-[#4c3fdc] transition hover:bg-[#e8e9ff]">Read full press release</Link>
+              <Link href={`/updates/${featured.slug}`} className="mt-4 inline-flex rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-[#4c3fdc] transition hover:bg-[#e8e9ff]">Read full press media</Link>
             </div>
           ) : null}
         </section>

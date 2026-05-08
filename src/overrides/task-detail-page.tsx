@@ -29,7 +29,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
       <NavbarShell />
       <section className="border-b border-[#d2e6ff] bg-[radial-gradient(circle_at_top_left,#d8ecff_0%,#f8fbff_60%)] py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#4f69a6]">Single Press Release</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#4f69a6]">Single Press Media</p>
           <h1 className="mt-4 max-w-5xl text-4xl font-semibold leading-tight tracking-[-0.03em] text-[#0f1c3d] sm:text-5xl">{post.title}</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">{post.summary || 'Media update with release details and official announcement context.'}</p>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[#495f95]">
@@ -89,7 +89,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl border border-[#d5e7ff] bg-white">
-            <Image src={FREEPIK.sidebar} alt="Single press release page reference" width={800} height={1400} className="h-auto w-full object-cover" />
+            <Image src={FREEPIK.sidebar} alt="Single press media page reference" width={800} height={1400} className="h-auto w-full object-cover" />
           </div>
         </aside>
       </main>
