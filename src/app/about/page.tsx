@@ -56,7 +56,7 @@ export default function AboutPage() {
 
         <section className="mt-10 rounded-3xl border border-[#d6e8ff] bg-white p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-[#112249]">Our Mission</h2>
-          <p className="mt-4 max-w-4xl text-sm leading-8 text-slate-600">We want every company update to be publication-ready, strategically positioned, and easy to discover. The platform combines strong writing structure with practical distribution flow so press releases become a durable growth channel.</p>
+          <p className="mt-4 max-w-4xl text-sm leading-8 text-slate-600">We want every company update to be publication-ready, strategically positioned, and easy to discover. The platform combines strong writing structure with practical distribution flow so press media become a durable growth channel.</p>
         </section>
       </main>
       <Footer />

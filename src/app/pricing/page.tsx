@@ -35,7 +35,7 @@ const comparison = [
 ]
 
 const addons = [
-  'Press release writing support',
+  'Press media writing support',
   'Social snippet package',
   'Launch announcement sequencing',
   'Crisis response fast turnaround',
@@ -67,7 +67,7 @@ export default function PricingPage() {
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#536ba3]">Pricing</p>
-              <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[#0f1c3d]">Flexible plans for every press release growth stage.</h1>
+              <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[#0f1c3d]">Flexible plans for every press media growth stage.</h1>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Pick a plan based on campaign depth, media reach goals, and reporting needs.</p>
             </div>
             <Image src={PRICING_HERO_IMAGE} alt="Pricing page reference visual" width={1100} height={700} className="h-52 w-full rounded-2xl border border-[#d9e8ff] object-cover" />

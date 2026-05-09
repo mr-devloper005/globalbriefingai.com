@@ -33,7 +33,7 @@ export function ContactPageOverride() {
                   </select>
                   <select className="h-12 rounded-xl border border-[#dcc8b7] bg-[#fff4e8] px-4 text-sm outline-none">
                     <option>How may we help you?</option>
-                    <option>Press release writing</option>
+                    <option>Press media writing</option>
                     <option>Distribution package</option>
                     <option>PR consultation</option>
                   </select>
@@ -46,13 +46,7 @@ export function ContactPageOverride() {
             </div>
             <div className="space-y-4">
               <Image src={CONTACT_IMAGE} alt="Contact page visual reference" width={900} height={1200} className="h-auto w-full rounded-2xl border border-[#dcc8b7] object-cover" />
-              <div className="rounded-2xl border border-[#dcc8b7] bg-[#fff4e8] p-5">
-                <p className="text-sm font-semibold text-[#241711]">Telephone Hours</p>
-                <p className="mt-2 text-sm text-[#6e5547]">Monday to Friday</p>
-                <p className="text-sm text-[#6e5547]">8:30 AM to 5:00 PM (PDT)</p>
-                <p className="mt-4 text-sm font-semibold text-[#241711]">Toll Free</p>
-                <p className="text-sm text-[#6e5547]">+1 888-880-9539</p>
-              </div>
+
             </div>
           </div>
         </section>
