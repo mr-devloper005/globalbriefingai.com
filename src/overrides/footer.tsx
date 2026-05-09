@@ -10,14 +10,12 @@ export function FooterOverride() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
             <h3 className="text-2xl font-semibold tracking-[-0.02em]">{SITE_CONFIG.name}</h3>
-            <p className="mt-3 max-w-sm text-sm leading-7 text-[#c1d5ff]">Media press release publishing for founders, agencies, and growth teams that need speed with credibility.</p>
+            <p className="mt-3 max-w-sm text-sm leading-7 text-[#c1d5ff]">Media press media publishing for founders, agencies, and growth teams that need speed with credibility.</p>
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#93b4ee]">Platform</p>
             <div className="mt-4 space-y-3 text-sm text-[#d4e3ff]">
               <Link href="/updates" className="block hover:text-white">Latest News</Link>
-              <Link href="/pricing" className="block hover:text-white">Pricing</Link>
-              <Link href="/press" className="block hover:text-white">Press Kit</Link>
               <Link href="/search" className="block hover:text-white">Search</Link>
             </div>
           </div>
@@ -26,7 +24,6 @@ export function FooterOverride() {
             <div className="mt-4 space-y-3 text-sm text-[#d4e3ff]">
               <Link href="/about" className="block hover:text-white">About Us</Link>
               <Link href="/contact" className="block hover:text-white">Contact</Link>
-              <Link href="/blog" className="block hover:text-white">Insights</Link>
             </div>
           </div>
           <div>

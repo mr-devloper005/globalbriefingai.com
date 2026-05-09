@@ -10,7 +10,6 @@ export const NAVBAR_OVERRIDE_ENABLED = true
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Latest News', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -27,7 +26,7 @@ export function NavbarOverride() {
           </div>
           <div>
             <p className="text-base font-semibold text-[#0f1c3f]">{SITE_CONFIG.name}</p>
-            <p className="text-[10px] uppercase tracking-[0.24em] text-[#5c72a8]">Media Press Release</p>
+            <p className="text-[10px] uppercase tracking-[0.24em] text-[#5c72a8]">Media Press Media</p>
           </div>
         </Link>
 

@@ -17,7 +17,7 @@ const FREEPIK = {
 
 function excerpt(text?: string | null) {
   const value = (text || '').trim()
-  if (!value) return 'Read the full press release for complete details.'
+  if (!value) return 'Read the full press media for complete details.'
   return value.length > 180 ? value.slice(0, 177).trimEnd() + '...' : value
 }
 
@@ -36,7 +36,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
           <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#536ba3]">Latest Newsroom</p>
-              <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[#0f1b3d]">Press Release Listing</h1>
+              <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[#0f1b3d]">Press Media Listing</h1>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Browse the latest releases with category and date filtering. Use search for quick discovery across all published posts.</p>
             </div>
             <Image src={FREEPIK.listingHero} alt="Latest news listing reference" width={1024} height={640} className="h-48 w-full rounded-2xl object-cover" />
@@ -44,7 +44,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
           <div className="mt-6 grid gap-3 md:grid-cols-[1fr_180px_180px_auto]">
             <form action="/search" className="flex items-center gap-2 rounded-xl border border-[#d7e8ff] bg-[#f8fbff] px-3 py-2">
               <Search className="h-4 w-4 text-[#566ca6]" />
-              <input name="q" className="h-8 w-full bg-transparent text-sm outline-none" placeholder="Search press releases" />
+              <input name="q" className="h-8 w-full bg-transparent text-sm outline-none" placeholder="Search press media" />
             </form>
             <form action="/updates">
               <select name="category" defaultValue={normalizedCategory} className="h-12 w-full rounded-xl border border-[#d7e8ff] bg-white px-3 text-sm text-[#24345f] outline-none">
@@ -72,7 +72,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
                 className="h-44 w-full object-cover"
               />
               <div className="p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#5a6ea3]">{String((post.content as any)?.category || 'Press release')}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#5a6ea3]">{String((post.content as any)?.category || 'Press media')}</p>
                 <h2 className="mt-2 line-clamp-2 text-xl font-semibold text-[#132347]">{post.title}</h2>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{excerpt(post.summary)}</p>
                 <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
@@ -89,14 +89,14 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
 
         {!filtered.length ? (
           <div className="mt-10 rounded-2xl border border-dashed border-[#cce0ff] bg-white p-10 text-center text-sm text-slate-500">
-            No press releases match this filter.
+            No press media match this filter.
           </div>
         ) : null}
 
         <aside className="mt-10 rounded-3xl border border-[#d4e6ff] bg-white p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#526ca6]">Quick Links</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {['/pricing', '/contact', '/about', '/press'].map((href) => (
+            {['/contact', '/about', '/press'].map((href) => (
               <Link key={href} href={href} className="rounded-lg border border-[#dbe9ff] bg-[#f8fbff] px-3 py-2 text-sm font-semibold text-[#1f2f59] hover:border-[#9CCFFF]">
                 {href.replace('/', '').replace('-', ' ') || 'home'}
               </Link>
