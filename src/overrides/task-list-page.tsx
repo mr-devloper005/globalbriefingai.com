@@ -75,8 +75,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#5a6ea3]">{String((post.content as any)?.category || 'Press media')}</p>
                 <h2 className="mt-2 line-clamp-2 text-xl font-semibold text-[#132347]">{post.title}</h2>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{excerpt(post.summary)}</p>
-                <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
-                  <span>{new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                <div className="mt-4 flex items-center justify-end text-xs text-slate-500">
                   <span>{post.authorName || 'Editorial Team'}</span>
                 </div>
                 <Link href={`/updates/${post.slug}`} className="mt-4 inline-flex text-sm font-semibold text-[#3c4ac6] hover:text-[#2e3897]">
